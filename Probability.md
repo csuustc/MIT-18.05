@@ -286,7 +286,7 @@ $$
 
 **Central limit theorem:** 
 $$
-S_n = \sum_{i=1}^n Xi,\ E(S_n)=n\mu,\ Var(S_n)=n\sigma^2 \\
+S_n = \sum_{i=1}^n Xi,\ E(S_n)=n\mu,\ Var(S_n)=n\sigma^2 \\ 
 \bar{X}_n=\frac{S_n}{n},\ E(\bar{X}_n)=\mu,\ Var(\bar{X}_n)=\frac{\sigma^2}{n} \\
 Z_n = \frac{S_n - n\mu}{\sigma\sqrt{n}} = \frac{\bar{X}_n - \mu}{\sigma/\sqrt{n}}
 $$
