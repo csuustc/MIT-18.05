@@ -86,7 +86,7 @@ $P(B|A) = \frac{P(A|B)P(B)}{P(A)}$
 $$E(X) = \sum_{j=1}^n p(x_j)x_j$$, measure of the **location** or **central tendency** of a random variable
 
 - $E(aX+b) = aE(X) + b$
-- $E(X+Y) = E(X)+E(Y)$ for any X and Y
+- $E(X+Y) = E(X)+E(Y)$ for any $X$ and $Y$
 - $E(h(X)) = \sum_{j} p(x_j)h(x_j)$
 
 > $$
