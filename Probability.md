@@ -303,7 +303,7 @@ $$
 >
 > Because $\bar{X}_n \sim N(p_0, p_0(1-p_0)/n)$, $\sigma = \sqrt{p_0(1-p_0)}$, then 95% confidence interval should be within $2\sigma/\sqrt{n}$ of the true mean $p_0$, we know $\sigma = \sqrt{p_0(1-p_0)} \le 1/2$, then $2\sigma/\sqrt{n} \le 1/\sqrt{n}$
 
-**Why we need CLT?** In real world, the distribution of the $X_i$ may not be familiar, or may not even be known, so you will not be able to compute the probabilities for $S_n$ exactly. it can also happen that the exact computation is possible in theory but too computationally intensive in practice. (If n is very big, even binomial distribution is hard to compute)
+**Why we need CLT?** In real world, the distribution of the $X_i$ may not be familiar, or may not even be known, so you will not be able to compute the probabilities for $S_n$ exactly. It can also happen that the exact computation is possible in theory but too computationally intensive in practice. (If n is very big, even binomial distribution is hard to compute, but binomial can be closely approximated by normal distribution.)
 
 ## Proof
 
