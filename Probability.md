@@ -202,7 +202,7 @@ $E(X) = \int_a^b x f(x) dx$, the units of $f(x)$ are $prob/(unit\ of\ X)$
 
 $y = h(x), x = h^{-1}(y)$
 
-$F_Y(Y) = P(Y \le y) = P(h(X) \le y) = P(X \le h^{-1}(y)) = F_X(h^{-1}(y))$ *but direction depends on h(x)*
+$F_Y(Y) = P(Y \le y) = P(h(X) \le y) = P(X \le h^{-1}(y)) = F_X(h^{-1}(y))$ *but direction depends on $h(x)$*
 
 ### Transform pdf
 
@@ -216,11 +216,13 @@ Probability is given by $\int f_X(x) dx$, $\frac{dy}{dx} = h'$
 
 ## Distributions
 
+*(Review reading materials 5b for more variance calculation)*
+
 ### Uniform Distribution
 
 $X \sim uniform(a, b)$ or $U(a, b)$, $f(x) = \frac{1}{b-a}$ for $a \le x \le b$
 
-$E(X) = \int_a^b \frac{x}{b-a} dx = \frac{b-a}{2}$
+$E(X) = \int_a^b \frac{x}{b-a} dx = \frac{b+a}{2}$
 
 ### Exponential Distribution
 
