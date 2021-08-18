@@ -83,7 +83,7 @@ $P(B|A) = \frac{P(A|B)P(B)}{P(A)}$
 
 ## Expected Value
 
-$$E(X) = \sum_{j=1}^n p(x_j)x_j$$, measure of the **location** or **central tendency** of a random variable
+$$E(X) = \sum_{j=1}^n p(x_j)x_j$$, measure of the **location** or **central tendency** of a random variable.
 
 - $E(aX+b) = aE(X) + b$
 - $E(X+Y) = E(X)+E(Y)$ for any $X$ and $Y$
@@ -412,7 +412,7 @@ If is often easier to work with the natural log of the likelihood function. Sinc
 > $$
 > Example2: Normal distributions
 > $$
-> f_{X_i}(x_i) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}},\ ln(f(x_1,..., x_n|\mu, \sigma)) = -nln(\sqrt{2\pi})-nln(\sigma)-\sum_{i=1}^n \frac{(x_i-\mu)^2}{2\sigma^2}
+> f_{X_i}(x_i) = \frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x_i-\mu)^2}{2\sigma^2}},\\ ln(f(x_1,..., x_n|\mu, \sigma)) = -nln(\sqrt{2\pi})-nln(\sigma)-\sum_{i=1}^n \frac{(x_i-\mu)^2}{2\sigma^2}
 > $$
 > Then
 > $$
