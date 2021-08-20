@@ -476,7 +476,7 @@ an experiment.
 >
 > $P(D_2|D_1) = \sum post \cdot likelihood = \sum p(x_2|\theta)p(\theta|x_1) = \sum p(x_2|\theta) p(x_1|\theta)p(\theta)/p(x_1)$
 
-Each hypothesis gives a different probability of heads, so the total probability of heads is a weighted average. For the prior predictive probability of heads, the weights are given by the prior probabilities of the hypotheses. For the posterior predictive probability of heads, the weights are given by the posterior probabilities of the hypotheses. Remember: Prior and posterior probabilities are for hypotheses. Prior predictive and posterior predictive probabilities are for data. 
+Each hypothesis gives a different probability of heads, so the total probability of heads is a weighted average. For the prior predictive probability of heads, the weights are given by the prior probabilities of the hypotheses. For the posterior predictive probability of heads, the weights are given by the posterior probabilities of the hypotheses. Remember: **Prior and posterior probabilities** are for **hypotheses**. Prior predictive and posterior predictive probabilities are for data. 
 
 ### Odds
 
