@@ -628,7 +628,7 @@ A p-probability interval for $\theta$ is an interval $[a,b]$ with $P(a\le\theta\
 
 ## Comparison
 
-**Frequentist** refers to the idea that probabilities represent long-term frequencies of repeatable random experiments. This means the frequentist finds it nonsensical to specify a probability distribution for a parameter with a fixed value. While Bayesians are happy to use probability to describe their incomplete knowledge of a fixed parameter, frequentists reject the use of probability to quantify degree of belief in hypotheses.
+**Frequentist** refers to the idea that probabilities represent long-term frequencies of repeatable random experiments. This means the frequentist finds it **nonsensical to specify a probability distribution for a parameter with a fixed value**. While Bayesians are happy to use probability to describe their **incomplete knowledge of a fixed parameter**, frequentists reject the use of probability to quantify degree of belief in hypotheses.
 
 **Bayesians** put probability distributions on everything (hypotheses and data), while frequentists put probability distributions on (random, repeatable, experimental) data given a hypothesis. For the frequentist when dealing with data from an unknown distribution only the likelihood has meaning. The prior and posterior do not.
 
