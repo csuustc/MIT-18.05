@@ -735,7 +735,7 @@ For z-test, we know the variance $\sigma^2$. However mostly we don't know $\sigm
 
 *when the variances are not assumed equal, use Welch's t-test.*
 
-> In fact, there are other significance tests that test whether the data is approximately normal (**Chi-square**) and whether the two groups have the same variance (**F-test**). In practice one might apply these first to determine whether a t test is appropriate in the first place.
+> In fact, there are other significance tests that test whether the data is approximately normal ([Shapiro-Wilk test](https://en.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test)) and whether the two groups have the same variance (**F-test**). In practice one might apply these first to determine whether a t test is appropriate in the first place.
 
 ### Paired two-sample t-test
 
@@ -825,7 +825,7 @@ $$
 
 Suppose the data $x_1, ..., x_n \sim N(\mu, \sigma^2)$ with unknown mean and unknown variance. Then the $(1-\alpha)$ confidence interval for $\mu$ is:
 $$
-[\bar{x} - \frac{z_{\alpha/2} \cdot s}{\sqrt{n}}, \bar{x} + \frac{z_{\alpha/2} \cdot s}{\sqrt{n}}]
+[\bar{x} - \frac{t_{\alpha/2} \cdot s}{\sqrt{n}}, \bar{x} + \frac{t_{\alpha/2} \cdot s}{\sqrt{n}}]
 $$
 
 ### Chi-square confidence intervals
@@ -851,14 +851,14 @@ If the distribution has finite mean and variance and if $n$ is sufficiently larg
 
 *"The data is 'pulling itself up by its own bootstrap.'"*
 
-**Why?** -- Most time we know know the data is drawn from which distribution. We can get some point estimates, but it's hard to estimate the variance and confidence interval. (For mean of course we can use central limit theorem, but for small sample or other statistics we want to know, CLT couldn't help)
+**Why?** -- Most time we know know the data is drawn from which distribution. We can get some point estimates, but it's hard to estimate the variance and confidence interval. (For mean of course we can use central limit theorem, but for **small sample** or other statistics we want to know, CLT couldn't help)
 
 ### Sampling
 
 - Sampling without replacement
 - Sampling with replacement (For very drawing small sample from very big population, we can think all sampling without replacement)
 
-The **empirical distribution** of data is simply the distribution that you see in the data. If true distribution is $F$, then we'll label the empirical distribution as $F^*$, which is also called **resampling distribution**
+The **empirical distribution** of data is simply the distribution that you see in the data. If true distribution is $F$, then we'll label the **empirical distribution** as $F^*$, which is also called **resampling distribution**
 
 ### Empirical bootstrap
 
@@ -886,6 +886,8 @@ Then the bootstrap principle says:
 3. draw bootstrap samples from  $F(\hat{\theta})$ 
 4. for each bootstrap sample compute $\delta^* = \hat{\theta}^* - \hat{\theta}$
 5.  $\delta^*$ approximates $\delta = \hat{\theta} - \theta$
+
+> Confidence interval of $\theta \iff P(\delta_{1-\alpha/2}<\delta<\delta_{\alpha/2}|\mu)=\alpha \iff [\hat{\theta} - \delta_{\alpha/2},\hat{\theta} - \delta_{1-\alpha/2}]$, then we use $\delta^*$ approximates $\delta$
 
 
 
