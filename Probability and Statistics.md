@@ -797,6 +797,8 @@ An interval statistic is a pair of point statistics giving the lower and upper b
 
 **Caution:** A 95% confidence interval is defined as a range of values such that with 95% probability, the range will contain the true unknown value of the parameter assuming the parameter value is true, which means we take n samples again and again, 95% confidence intervals will cover the real value. It can not be expressed as the true parameter has 95% probability to be in the confidence interval because the confidence interval is a random variable whereas the true parameter not.
 
+The **confidence level** of an interval statistic is a probability concerning a random interval and a hypothesized value $\theta_0$ for the unknown parameter. Precisely, it is the **probability that the random interval** $I_x$ (computed from random data x) contains the value $\theta_0$ **given that the model parameter** truly is $\theta_0$. Since the true value of $\theta$ is unknown, the frequentist statistician defines 95% confidence intervals so that the 0.95 probability is valid no matter which hypothesized value of the parameter is actually true.
+
 **Pivoting:** Non reject if $\bar{x}$ is in the interval $\mu_0 \pm \frac{z_{\alpha/2}\sigma}{\sqrt{n}}$, equivalently non reject if $\mu_0$ is in the interval $\bar{x} \pm \frac{z_{\alpha/2}\sigma}{\sqrt{n}}$.
 
 **3 approaches** to get confidence intervals:
