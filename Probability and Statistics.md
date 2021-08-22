@@ -681,15 +681,18 @@ A p-probability interval for $\theta$ is an interval $[a,b]$ with $P(a\le\theta\
 
 We could only say *reject* or *not reject* the null hypothesis, whereas *accept* $H_0$ is wrong. This is often summarized by the statement: *you can never prove the null hypothesis*. A **significance level** of 0.05 does not mean the test only makes mistakes 5% of the time. It means that if the null hypothesis is true, then the probability the test will mistakenly reject it is 5%.
 
+> If $H_0$ true, then the data show reject or non-reject $H_0$; but the reverse is not right, because if A then B can only derive if not B then not A
+
 ### Design a NHST
 
-1. Design an experiment to collect data and choose a test statistic $x$ to be computed from the data. The key requirement here is to know the null distribution $f(x|H_0)$. To compute power, one must also know the alternative distribution $f(x|H_A)$.
-2. Decide if $H_A$ one-sided or two-sided
-3. Choose a significance level $\alpha$ for rejecting the null hypothesis. If applicable, compute the corresponding power of the test.
-4. Run the experiment to collect data $x_1, x_2, ..., x_n$
-5. Compute the test statistic $x$
-6. Compute the p-value corresponding to $x$ using the null distribution
-7. If $p<\alpha$, reject the null hypothesis in favor of the alternative hypothesis
+1. Clarify $H_0$ and $H_A$
+2. Design an experiment to collect data and choose a test statistic $x$ to be computed from the data. The key requirement here is to know the null distribution $f(x|H_0)$. To compute power, one must also know the alternative distribution $f(x|H_A)$.
+3. Decide if $H_A$ one-sided or two-sided
+4. Choose a significance level $\alpha$ for rejecting the null hypothesis. If applicable, compute the corresponding power of the test.
+5. Run the experiment to collect data $x_1, x_2, ..., x_n$
+6. Compute the test statistic $x$
+7. Compute the p-value corresponding to $x$ using the null distribution
+8. If $p<\alpha$, reject the null hypothesis in favor of the alternative hypothesis
 
 **p-value** is the probability, assuming the null hypothesis, of seeing data at least as extreme as the experimental data. Depends on one-sided or two-sided.
 
@@ -731,6 +734,8 @@ For z-test, we know the variance $\sigma^2$. However mostly we don't know $\sigm
 * Null hypothesis: $f(t|H_0)$ follows the pdf $T\sim t(n+m-2)$
 
 *when the variances are not assumed equal, use Welch's t-test.*
+
+> In fact, there are other significance tests that test whether the data is approximately normal (**Chi-square**) and whether the two groups have the same variance (**F-test**). In practice one might apply these first to determine whether a t test is appropriate in the first place.
 
 ### Paired two-sample t-test
 
