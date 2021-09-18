@@ -186,7 +186,7 @@ Then $(1+x/n)^n = [(1+\frac{1}{n/x})^{n/x}]^x = e^x = 1+x+\frac{x^2}{2!}+\frac{x
 
 A random variable $X$ is continuous if there is a function $f(x)$ such that for any $c \le d$ we have $P(c \le X \le d) = \int_c^d f(x) dx$, the function $f(x)$ is **probability density function (pdf)**
 
-**Cumulative distribution function (pdf):** $F(b) = P(X \le b) = \int_{-\infin}^b f(x)dx$
+**Cumulative distribution function (cdf):** $F(b) = P(X \le b) = \int_{-\infin}^b f(x)dx$
 
 ## Expected Value
 
@@ -284,7 +284,7 @@ Models: The Pareto distribution models a power law, where the probability that a
 $$
 \lim_{n\to \infin} P(|\bar{X}_n - \mu| < a) = 1
 $$
-**LoLN for histograms:** With high probability the density histogram of a large number of samples from a distribution is a good approximation of the graph of the underlying pdf f(x).
+**LoLN for histograms:** With high probability the density histogram of a large number of samples from a distribution is a good approximation of the graph of the underlying pdf $f(x)$.
 
 **Central limit theorem:** 
 $$
@@ -382,7 +382,7 @@ Three phases: collecting data, describing data, analyzing data. We make hypothes
 > Example: the probability of rolling a 6 is not a statistic, whether or not the die is truly fair. Rather this probability is a property of the die (and the way we roll it) which we can estimate using the data. Such an estimate is given by the statistic *proportion of the rolls that were 6*.
 
 * Point statistics: a single value computed from data, such as the sample average or the sample standard deviation
-* Interval statistics: an interval  $[a: b]$ computed from the data.
+* Interval statistics: an interval $[a: b]$ computed from the data.
 
 ## Maximum Likelihood Estimates
 
