@@ -206,7 +206,7 @@ $E(X) = \int_a^b x f(x) dx$, the units of $f(x)$ are $prob/(unit\ of\ X)$
 
 $y = h(x), x = h^{-1}(y)$
 
-$F_Y(Y) = P(Y \le y) = P(h(X) \le y) = P(X \le h^{-1}(y)) = F_X(h^{-1}(y))$ *but direction depends on $h(x)$*
+$F_Y(y) = P(Y \le y) = P(h(X) \le y) = P(X \le h^{-1}(y)) = F_X(h^{-1}(y))$ *but direction depends on $h(x)$*
 
 ### Transform pdf
 
@@ -381,7 +381,7 @@ Three phases: collecting data, describing data, analyzing data. We make hypothes
 
 ## Statistic
 
-**Definition:** A statistic is anything that can be computed from the collected data, which itself is a random variable because new experiment will produce new data
+**Definition:** A statistic is anything that can be computed from the collected data, which itself is a random variable because new experiment will produce new data.
 
 > Example: the probability of rolling a 6 is not a statistic, whether or not the die is truly fair. Rather this probability is a property of the die (and the way we roll it) which we can estimate using the data. Such an estimate is given by the statistic *proportion of the rolls that were 6*.
 
