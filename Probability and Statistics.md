@@ -166,11 +166,13 @@ $Var(X) = E(X^2) - E(X)^2 = \sum_{k=1}^n k^2/n - (\frac{n+1}{2})^2 = \frac{n^2 -
 
 ![Poisson](picture/Poisson.png)
 
+**Poisson Process:** the timing of next event is completely independent of when the previous event happened
+
 $X \sim Poisson(\lambda): P(X=k) = \frac{e^{-\lambda}\lambda^k}{k!}$
 
 $E(X) = Var(X) = \lambda$
 
-> **Relationship with binomial distribution:** for binomial distribution, $p(k) = C_n^k p^k(1-p)^{n-k}$, if we know average success time is $\lambda$ in a period of time, then we split it into n intervals, for 1 interval, $p=\lambda/n$
+> **Relationship with binomial distribution:** for binomial distribution, $p(k) = C_n^k p^k(1-p)^{n-k}$, if we know average success times is $\lambda$ in a period of time, then we split it into n intervals, for 1 interval, $p=\lambda/n$
 >
 > $p(k)=C_n^k (\lambda/n)^k(1-\lambda/n)^{n-k} = e^{-\lambda} \frac{n!}{(n-k)!k!} (\frac{\lambda}{n-\lambda})^k =\frac{\lambda^k}{k!}e^{-\lambda}$
 
@@ -229,6 +231,8 @@ $X \sim uniform(a, b)$ or $U(a, b)$, $f(x) = \frac{1}{b-a}$ for $a \le x \le b$
 $E(X) = \int_a^b \frac{x}{b-a} dx = \frac{b+a}{2}$
 
 ### Exponential Distribution
+
+The waiting time between arrivals of a **Poisson Process** is exponential distributed.
 
 $X \sim exponential(\lambda)$ or $exp(\lambda)$
 
