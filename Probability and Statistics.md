@@ -708,6 +708,16 @@ $p = P(data\ at\ least\ as\ extreme\ as\ what\ we\ got|H_0)$
 
 **The main purpose of significance testing is to use sample statistics to draw conclusions about population parameters. **
 
+## Permutation test
+
+What if we don't know the null distribution? -- [Permuation test](https://en.wikipedia.org/wiki/Permutation_test). Basically assume $A$ and $B$ from same distribution, then we combine them and get random permutation, the test statistics should be still same.
+
+1. get $t_A$ and $t_B$ from original sample data
+2. pool $A$ and $B$ together and produce simulated permuation series $t_1, ..., t_n$
+3. use distribution of $t_n$ to calculate the confidence interval
+
+**Pro:** Permutation tests exist for any test statistic, regardless of whether or not its distribution is known. Thus one is always free to choose the statistic which best discriminates between hypothesis and alternative and which minimizes losses.
+
 ## Z-test
 
 * Use: Test if the population mean equals a hypothesized mean.
