@@ -67,7 +67,7 @@ $P(B|A) = \frac{P(A|B)P(B)}{P(A)}$
 - ***FP / N:*** false positive rate, type I error, 1 - specificity
 - ***TN / N:*** true negative rate, 1 - type I error, specificity
 - ***FN / P:*** false negative rate, type II error
-- ***TP / P:*** true positive rate, power, sensitivity, recall
+- ***TP / P:*** true positive rate, **power**, sensitivity, recall
 - ***TP / P\*:*** precision, 1 - false discovery proportion
 - ***F1 Score:*** 2 * (Precision * Recall) / (Precision + Recall)
 
@@ -162,7 +162,7 @@ $Var(X) = E(X^2) - E(X)^2 = \sum_{k=1}^n k^2/n - (\frac{n+1}{2})^2 = \frac{n^2 -
 
 > Hint: $\sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6}$
 
-### Poisson Distribution
+### [Poisson Distribution](https://en.wikipedia.org/wiki/Poisson_distribution)
 
 ![Poisson](picture/Poisson.png)
 
